@@ -1,0 +1,30 @@
+The following table shows scores for combinations of hyperparameters near the optimal values. Many more combinations of hyperparameters
+were tested using GridSearchCV, and only the subset are shown in the table.
+
+max_depth | max_samples | min_samples_leaf | min_samples_split | macro-f1 score | deceased f1-score | accuracy
+    None       1.00              1                   2                0.77              0.45            0.94  <-- Default Hyperparameters
+    
+    5           0.56             1                   5                0.78              0.51            0.93
+    10          0.56             1                   5                0.79              0.54            0.94
+    14          0.56             1                   5                0.80              0.53            0.94  <-- Best Hyperparameters
+    20          0.56             1                   5                0.79              0.50            0.94
+    25          0.56             1                   5                0.79              0.50            0.94
+    50          0.56             1                   5                0.79              0.50            0.94
+
+    14          0.20             1                   5                0.79              0.51            0.93
+    14          0.40             1                   5                0.80              0.53            0.94
+    14          0.60             1                   5                0.80              0.53            0.94
+    14          0.80             1                   5                0.79              0.53            0.93
+    14          1.00             1                   5                0.79              0.53            0.93
+
+    14          0.56             3                   5                0.79              0.52            0.93
+    14          0.56             5                   5                0.78              0.52            0.93
+    14          0.56             10                  5                0.78              0.49            0.93
+    14          0.56             20                  5                0.78              0.50            0.93
+    14          0.56             50                  5                0.76              0.47            0.93
+
+    14          0.56             1                   2                0.80              0.53            0.94
+    14          0.56             1                   10               0.80              0.54            0.94
+    14          0.56             1                   15               0.79              0.53            0.94
+    14          0.56             1                   25               0.79              0.53            0.94
+    14          0.56             1                   50               0.78              0.50            0.93
