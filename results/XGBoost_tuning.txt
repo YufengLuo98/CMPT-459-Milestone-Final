@@ -1,0 +1,14 @@
+This is a small subset of the parameter search space that was performed. RandomizedSearchCV was first used multiple times on a large range of parameters, this allowed us to narrow down the ranges of each parameter. Then GridSearchCV was used on the final parameter ranges which were more easier to compute. The accuracy and f1-score did not improve much in the positive direction but minor improvements were able to be made on precision of predicting the deceased class and there were no signs of overfitting due to the choices of hyper parameters that were being tuned.
+
+
+  eta  |   max_depth   |    subsample   |   min_child_weight  |   gamma   |   colsample_bytree  |    macro-f1 score  |    deceased f1-score |      accuracy
+  0.10         5               0.7                 5                 1              0.6                   0.78                    0.47            0.950558
+  0.10         3               0.5                 3                0.5             0.4                   0.78                    0.46            0.949105
+  0.10         5               0.5                 7                0.5             0.6                   0.78                    0.46            0.950790
+  0.35         5               0.7                 7                0.5             0.4                   0.79                    0.48            0.950151
+  0.30         3               0.7                 3                1.5             0.8                   0.79                    0.48            0.952010
+  0.35         3               0.5                 5                1.5             0.6                   0.78                    0.46            0.949512
+  0.10         5               0.5                 7                1.5             0.8                   0.78                    0.47            0.951429
+  0.10         5               0.7                 7                1.5             0.8                   0.79                    0.47            0.950732
+  0.10         3               0.7                 5                0.5             0.6                   0.79                    0.46            0.959744
+  0.30         5               0.5                 5                1.5             0.8                   0.78                    0.47            0.950093
