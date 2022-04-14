@@ -4,10 +4,10 @@
 Python Version 3.7
 
 ### Libraries Used
-pandas
-numpy
-matplotlib
-sklearn
-imblearn
-xgboost
-import seaborn
+* pandas
+* numpy
+* matplotlib
+* sklearn
+* imblearn
+* xgboost
+* import seaborn
