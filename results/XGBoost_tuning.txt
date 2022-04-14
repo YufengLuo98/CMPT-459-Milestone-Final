@@ -1,5 +1,8 @@
 This is a small subset of the parameter search space that was performed. RandomizedSearchCV was first used multiple times on a large range of parameters, this allowed us to narrow down the ranges of each parameter. Then GridSearchCV was used on the final parameter ranges which were more easier to compute. The accuracy and f1-score did not improve much in the positive direction but minor improvements were able to be made on precision of predicting the deceased class and there were no signs of overfitting due to the choices of hyper parameters that were being tuned.
 
+RandomizedSearchCV was first run multiple times on these ranges of parameters:
+
+eta: [0.05,0.1,0.3,0.5,0.7], gamma: [0.4, 0.6, 0.8, 1, 1.2] subsample: [0.3, 0.5, 0.7], colsample_bytree: [0.4, 0.6, 0.8], max_depth[3, 4, 5, 6], min_child_weight: [3, 5, 7] 
 
   eta  |   max_depth   |    subsample   |   min_child_weight  |   gamma   |   colsample_bytree  |    macro-f1 score  |    deceased f1-score |      accuracy
   0.10         5               0.7                 5                 1              0.6                   0.78                    0.47            0.950558
