@@ -2,22 +2,21 @@ Additional parameters were searched with GridSearchCV, but only the below were t
 
 hidden_layer_sizes | activation | solver | alpha | learning_rate | max_iter | macro-f1 score | deceased f1-score | accuracy
 (100,)               relu         adam     0.0001  constant        200        0.78             0.47                0.95	<-- default without dataset balancing
-(100,)               relu         adam     0.0001  constant        200        0.82             0.64                0.92      <-- default with dataset balancing
+(100,)               relu         adam     0.0001  constant        200        0.82             0.64                0.92	<-- default with dataset balancing
 (100,)               relu         adam     0.0001  constant        100        0.80             0.59                0.92
 (100,)               relu         adam     0.0001  constant        500        0.81             0.61                0.92	<-- potential non-converging models for max_iter = 100 / 200
 (50,)                relu         adam     0.0001  constant        500        0.80             0.59                0.92
 (200,)               relu         adam     0.0001  constant        500        0.80             0.61                0.92
 (50,50)              relu         adam     0.0001  constant        500        0.81             0.62                0.92
 (50,50,50)           relu         adam     0.0001  constant        500        0.80             0.59                0.92
-(25,50,25)           relu         adam     0.0001  constant        500        0.81             0.61                0.92
+(25,50,25)           relu         adam     0.0001  constant        500        0.81             0.61                0.92	<-- best
 (25,50,25)           relu         adam     0.5     constant        500        0.80             0.60                0.92
 (100,100,100)        relu         adam     0.0001  constant        500        0.79             0.58                0.92
 (100,50)             relu         adam     0.5     adaptive        500        0.81             0.61                0.91
 (100,50)             relu         adam     0.0001  constant        500        0.81             0.62                0.92
 (100,100,50)         relu         adam     0.001   constant        500        0.80             0.59                0.92
 (100,50,100)         relu         adam     0.0001  constant        500        0.81             0.62                0.92
-
-(100,)               relu         adam     0.0001  constant        500        0.80             0.59                0.92 	<-- best performing on all classes
+(100,)               relu         adam     0.0001  constant        500        0.80             0.59                0.92
 (100,)               relu         adam     0.0001  adaptive        500        0.80             0.59                0.92
 (100,)               relu         sgd      0.0001  constant        500        0.80             0.58                0.92
 (100,)               relu         adam     0.5     constant        500        0.81             0.61                0.92
